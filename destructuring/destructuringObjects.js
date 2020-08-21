@@ -25,6 +25,17 @@ console.log(age);
 const { name: firstname } = John;
 console.log(firstname);
 
-// default values -> variable isn't specified, so use 'Rice'
+// default values -> variable isn't specified, so variable set to 'Rice'
 const { favoriteFood = 'Rice' } = Sally;
 console.log(favoriteFood);
+
+// retrieve a nested object variable
+const {
+  address: { city },
+} = Sally;
+
+console.log(city);
+
+// merge 2 objects
+const person3 = { ...Sally, ...John };
+console.log(person3);
