@@ -3,9 +3,11 @@ const numbers = ['1', '2', '3', '4', '5', '6'];
 
 // first 2 elements
 const [a, b] = alphabet;
+// first & third element
+const [a1, , c1] = alphabet;
 
-console.log(a);
-console.log(b);
+console.log(a1);
+console.log(c1);
 
 // spread operator
 const [aNum, bNumb, ...rest] = numbers;

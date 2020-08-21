@@ -21,6 +21,10 @@ const { name, age } = Sally;
 console.log(name);
 console.log(age);
 
-// destructure the object &
+// destructure the object & create a new variable
 const { name: firstname } = John;
 console.log(firstname);
+
+// default values -> variable isn't specified, so use 'Rice'
+const { favoriteFood = 'Rice' } = Sally;
+console.log(favoriteFood);
