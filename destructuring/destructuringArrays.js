@@ -18,3 +18,15 @@ console.log(newArray);
 
 // concatenate
 const concatenateArray = alphabet.concat(numbers);
+
+function sumAndMultiply(a, b) {
+  return [a + b, a * b];
+}
+
+const array = sumAndMultiply(2, 3);
+console.log(array);
+
+// destructure the return from sumAndMultiply
+const [sum, multiply] = sumAndMultiply(2, 3);
+console.log(sum);
+console.log(multiply);
