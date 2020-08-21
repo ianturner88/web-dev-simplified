@@ -39,3 +39,17 @@ console.log(city);
 // merge 2 objects
 const person3 = { ...Sally, ...John };
 console.log(person3);
+
+// old way
+function printUserOldWay(user) {
+  console.log(`Name is ${user.name}. Age is ${user.age}.`);
+}
+
+printUserOldWay(John);
+
+// new way
+function printUserNewWay({ name, age, favFood = 'watermelon' }) {
+  console.log(`Name is ${name}. Age is ${age}. Fav food is ${favFood}.`);
+}
+
+printUserNewWay(Sally);
