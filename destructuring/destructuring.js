@@ -15,3 +15,6 @@ console.log(rest);
 // merge arrays together
 const newArray = [...alphabet, ...numbers];
 console.log(newArray);
+
+// concatenate
+const concatenateArray = alphabet.concat(numbers);
