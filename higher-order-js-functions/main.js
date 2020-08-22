@@ -56,29 +56,3 @@ const companies = [
 ];
 
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
-
-// standard for loop
-for (let i = 0; i < companies.length; i++) {
-  console.log(companies[i]);
-}
-
-console.log('forEach');
-
-// for each
-// apply forEach to the object companies --> outputs all nested objects
-companies.forEach((company) => {
-  console.log(company);
-});
-
-console.log('filter');
-
-// identify all the people who are 21 years or older
-const canDrink = [];
-
-for (let i = 0; i < ages.length; i++) {
-  if (ages[i] >= 21) {
-    canDrink.push(ages[i]);
-  }
-}
-
-console.log(canDrink);
