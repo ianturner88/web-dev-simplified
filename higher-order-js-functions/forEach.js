@@ -1,3 +1,5 @@
+import { companies } from './main';
+
 // standard for loop
 for (let i = 0; i < companies.length; i++) {
   console.log(companies[i]);
