@@ -76,7 +76,7 @@ console.log('filter');
 const canDrink = [];
 
 for (let i = 0; i < ages.length; i++) {
-  if (ages[i] > 21) {
+  if (ages[i] >= 21) {
     canDrink.push(ages[i]);
   }
 }
