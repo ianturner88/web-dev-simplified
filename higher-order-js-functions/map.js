@@ -14,3 +14,6 @@ console.log(agesSquare);
 
 const agesTimesTwo = ages.map((age) => age * 2);
 console.log(agesTimesTwo);
+
+const test = ages.map((age) => Math.sqrt(age)).map((age) => age * 2);
+console.log(`double map: ${test}`);
