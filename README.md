@@ -25,3 +25,7 @@ are less than 5 are not 'carried over' to the new array.
 
 reduce allows returns a single value from an input array after applying a
 reducer function on the input array.
+
+## Flexbox
+
+A simple way to layout a page in a clean, compartmentalized way.
