@@ -1,0 +1,17 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 250px;
+
+  /* grid-template-columns: repeat(4, 100px); */
+  /* grid-template-rows: 10px, 80px; */
+
+  /* all undefined rows are set to 250px */
+  grid-auto-rows: 250px;
+  /* the minimum size is 150px, the box takes up as much space as needed */
+  grid-auto-rows: minmax(150px, auto);
+
+  /* puts a 20px gap between the boxes */
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  grid-gap: 10px;
+}

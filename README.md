@@ -29,3 +29,5 @@ reducer function on the input array.
 ## Flexbox
 
 A simple way to layout a page in a clean, compartmentalized way.
+
+## CSS Grid
