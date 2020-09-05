@@ -31,3 +31,9 @@ reducer function on the input array.
 A simple way to layout a page in a clean, compartmentalized way.
 
 ## CSS Grid
+
+A stepup in difficulty from Flexbox, I suppose.
+
+## DOM
+
+A walkthrough of the Document Object Model (DOM).
