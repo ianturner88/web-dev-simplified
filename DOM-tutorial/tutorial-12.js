@@ -1,28 +1,35 @@
-document.forms;
-console.log(document.forms);
+const list = document.querySelector('#book-list ul');
 
-console.log('1:');
+// delete books
+list.addEventListener('click', (e) => {
+  if (e.target.className == 'delete') {
+    const li = e.target.parentElement;
+    list.removeChild(li);
+  }
+});
+
+console.log(document.forms);
 console.log(document.forms[0]);
-console.log('2:');
 console.log(document.forms['add-book']);
 
+// add books
 const addForm = document.forms['add-book'];
 
 addForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const { value } = addForm.querySelector('input[type="text"]');
 
-  // create li & span tags
+  // create element
   const li = document.createElement('li');
   const bookName = document.createElement('span');
-  const deleteButton = document.createElement('span');
+  const deleteBtn = document.createElement('span');
 
   // add content
-  deleteButton.textContent = 'delete';
+  deleteBtn.textContent = 'delete';
   bookName.textContent = value;
 
   // append to DOM
   li.appendChild(bookName);
-  li.appendChild(deleteButton);
+  li.appendChild(deleteBtn);
   list.appendChild(li);
 });
